@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin: 6px 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input, textarea, button {
+    font-size: 1rem;
+  }
+}
+
+/* Optional: Mobile-exclusive section styling */
+.mobile-highlight {
+  background: #222;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 2px dashed #444;
+}
+
+.mobile-highlight h3 {
+  color: #80ffea;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.mobile-highlight p {
+  font-size: 1rem;
+  color: #ccc;
+}
