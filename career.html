@@ -95,80 +95,10 @@
       to { opacity: 1; transform: translateY(0); }
     }
 <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 600px)">
-
-/* Navbar Styles */
-.navbar {
-  background-color: #121212;
-  padding: 10px 20px;
-  color: #ffffff;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #bb86fc;
-}
-
-.menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-  color: #80ffea;
-}
-
-.nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  color: #e0e0e0;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #1f1f1f;
-    margin-top: 10px;
-    border-radius: 8px;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .nav-links li {
-    padding: 10px 15px;
-    border-bottom: 1px solid #333;
-  }
-}
-
-
   </style>
 </head>
 <body>
-<nav class="navbar">
-  <div class="navbar-header">
-    <span class="logo">Draconium</span>
-    <span class="menu-icon" onclick="toggleMenu()">☰</span>
-  </div>
-  <ul class="nav-links" id="navLinks">
+<nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
@@ -178,9 +108,7 @@
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
     <a href="career.html">Careers</a>
-  </ul>
 </nav>
-
 
   <section>
     <h2>Join Our Team</h2>
@@ -218,10 +146,5 @@
   <footer>
     © 2025 Draconium Technologies • Careers Page
   </footer>
-<script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-  }
-</script>
 </body>
 </html>
