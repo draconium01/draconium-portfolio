@@ -1,38 +1,38 @@
-@media screen and (max-width: 600px) {
-  nav {
-    padding: 10px;
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+    background-color: #121212;
+    padding: 10px 20px;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
-
-  nav a {
-    font-size: 1rem;
-    margin: 6px 0;
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #80ffea;
   }
-
-  h2 {
-    font-size: 1.5rem;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    margin-top: 10px;
+    border-radius: 8px;
+    list-style: none;
+    padding: 0;
   }
-
-  input, textarea, button {
-    font-size: 1rem;
+  .nav-links.active {
+    display: flex;
   }
-}
-
-/* Optional: Mobile-exclusive section styling */
-.mobile-highlight {
-  background: #222;
-  padding: 30px 20px;
-  text-align: center;
-  margin-top: 20px;
-  border-top: 2px dashed #444;
-}
-
-.mobile-highlight h3 {
-  color: #80ffea;
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.mobile-highlight p {
-  font-size: 1rem;
-  color: #ccc;
+  .nav-links li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #333;
+  }
+  .nav-links li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+  }
 }
