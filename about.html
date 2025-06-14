@@ -59,17 +59,23 @@
   </style>
 </head>
 <body>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="order.html">Orders</a>
-    <a href="projects.html">Projects</a>
-    <a href="team.html">Team</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-    <a href="career.html">Careers</a>
-</nav>
+<div class="navbar">
+  <div class="brand">Draconium</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</div>
+<ul class="nav-links" id="mobileMenu">
+  <li> <a href="index.html">Home</a> </li>
+  <li><a href="about.html">About</a></li>
+  <li> <a href="services.html">Services</a></li>
+  <li><a href="order.html">Order</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="team.html">Team</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="career.html">Careers</a></li>
+  <li><a href="cart.html">Cart</a></li>
+</ul>
+
   <section>
     <h2>About Us</h2>
     <p>Hello! I'm <strong>Dillshad</strong>, the 14-year-old founder of <strong>Draconium Technologies</strong>. I started this company with one goal — to build an Indian tech brand as powerful and respected , Using only creativity, code, and consistency.</p>
@@ -81,5 +87,12 @@
   <footer>
     © 2025 Draconium Technologies • Built by Dillshad (Age 14)
   </footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+  }
+</script>
+
 </body>
 </html>
