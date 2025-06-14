@@ -36,3 +36,19 @@
     font-weight: 500;
   }
 }
+ /* your other mobile navbar styles here... */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+}
+
