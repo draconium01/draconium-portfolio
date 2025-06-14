@@ -1,54 +1,60 @@
-@media (max-width: 768px) {
-  .navbar {
-    display: block;
-    background-color: #121212;
-    padding: 10px 20px;
-    color: #ffffff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  .menu-icon {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    color: #80ffea;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #1f1f1f;
-    margin-top: 10px;
-    border-radius: 8px;
-    list-style: none;
-    padding: 0;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .nav-links li {
-    padding: 10px 15px;
-    border-bottom: 1px solid #333;
-  }
-  .nav-links li a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: 500;
-  }
-}
- /* your other mobile navbar styles here... */
-.mobile-only {
+/* Hide mobile navbar on desktop */
+.mobile-navbar {
   display: none;
 }
 
+/* Show mobile navbar and menu on screens smaller than 768px */
 @media (max-width: 768px) {
-  .mobile-only {
-    display: block;
-  }
-
-  .desktop-only {
+  .desktop-navbar {
     display: none;
   }
 
-}
+  .mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    color: #fff;
+    padding: 12px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
 
+  .mobile-navbar .brand {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .mobile-navbar .menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 12px 20px;
+  }
+
+  .nav-links li a {
+    color: #80ffea;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+
+  .nav-links li a:hover {
+    background-color: #333;
+  }
+}
